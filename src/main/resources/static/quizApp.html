@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" type="text/css" href="css/quizApp.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Interactive Quiz</h1>
+        <h3 id="qnumber"></h3>
+        <div class="qbox">
+            <h2>What is 3+4?</h2>
+            <input type="radio" id="1c1" name="q1" class="qbutton" value="6">
+            <label for="1c1" class="qtext">6</label><br>
+            <input type="radio" id="1c2" name="q1" class="qbutton" value="7">
+            <label for="1c2" class="qtext">7</label><br>
+            <input type="radio" id="1c3" name="q1" class="qbutton" value="8">
+            <label for="1c3" class="qtext">8</label><br>
+            <input type="radio" id="1c4" name="q1" class="qbutton" value="9">
+            <label for="1c4" class="qtext">9</label><br>
+        </div>    
+        <div class="qbox" style="display: none;">
+            <h2>What is 2*2?</h2>
+            <input type="radio" id="2c1" name="q2" class="qbutton" value="0">
+            <label for="2c1" class="qtext">0</label><br>
+            <input type="radio" id="2c2" name="q2" class="qbutton" value="2">
+            <label for="2c2" class="qtext">2</label><br>
+            <input type="radio" id="2c3" name="q2" class="qbutton" value="4">
+            <label for="2c3" class="qtext">4</label><br>
+            <input type="radio" id="2c4" name="q2" class="qbutton" value="6">
+            <label for="2c4" class="qtext">6</label><br>
+        </div>
+        <div class="qbox" style="display: none;">
+            <h2>What is 99-18?</h2>
+            <input type="radio" id="3c1" name="q3" class="qbutton" value="78">
+            <label for="3c1" class="qtext">78</label><br>
+            <input type="radio" id="3c2" name="q3" class="qbutton" value="79">
+            <label for="3c2" class="qtext">79</label><br>
+            <input type="radio" id="3c3" name="q3" class="qbutton" value="81">
+            <label for="3c3" class="qtext">81</label><br>
+            <input type="radio" id="3c4" name="q3" class="qbutton" value="88">
+            <label for="3c4" class="qtext">88</label><br>
+        </div>
+        <div class="qbox" style="display: none;">
+            <h2>What is 12<sup>2</sup>?</h2>
+            <input type="radio" id="4c1" name="q4" class="qbutton" value="144">
+            <label for="4c1" class="qtext">144</label><br>
+            <input type="radio" id="4c2" name="q4" class="qbutton" value="148">
+            <label for="4c2" class="qtext">148</label><br>
+            <input type="radio" id="4c3" name="q4" class="qbutton" value="160">
+            <label for="4c3" class="qtext">160</label><br>
+            <input type="radio" id="4c4" name="q4" class="qbutton" value="188">
+            <label for="4c4" class="qtext">188</label><br>
+        </div>
+        <div class="qbox" style="display: none;">
+            <h2>What is &radic;81</h2>
+            <input type="radio" id="5c1" name="q5" class="qbutton" value="6">
+            <label for="5c1" class="qtext">6</label><br>
+            <input type="radio" id="5c2" name="q5" class="qbutton" value="7">
+            <label for="5c2" class="qtext">7</label><br>
+            <input type="radio" id="5c3" name="q5" class="qbutton" value="8">
+            <label for="5c3" class="qtext">8</label><br>
+            <input type="radio" id="5c4" name="q5" class="qbutton" value="9">
+            <label for="5c4" class="qtext">9</label><br>
+        </div>
+        <div class="qbox" style="display: none;">
+            <h2>What is 5 - 3&radic;9 + 2<sup>3</sup></h2>
+            <input type="radio" id="6c1" name="q6" class="qbutton" value="1">
+            <label for="6c1" class="qtext">1</label><br>
+            <input type="radio" id="6c2" name="q6" class="qbutton" value="4">
+            <label for="6c2" class="qtext">4</label><br>
+            <input type="radio" id="6c3" name="q6" class="qbutton" value="6">
+            <label for="6c3" class="qtext">6</label><br>
+            <input type="radio" id="6c4" name="q6" class="qbutton" value="9">
+            <label for="6c4" class="qtext">9</label><br>
+        </div>
+
+        
+        <button id="back" style="visibility: hidden;">&#x2190;</button>
+        <button id="submit" style="visibility: hidden;">Submit Answers</button>
+        <button id="next">&#x2192;</button>
+        <p id="score" style="visibility: hidden;">Score: a/10</p>
+
+        <script src="js/quizLogic.js"></script>
+    </div>
+</body>
+</html>
